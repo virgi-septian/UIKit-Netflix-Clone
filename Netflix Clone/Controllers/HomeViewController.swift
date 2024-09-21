@@ -9,6 +9,8 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    let sectionTitles = ["Trending", "Populer", "Trending TV", "Most Popular", "Upcoming Movie","Top Rated"]
+    
     // Table for home feed
     private let homeFeedTable: UITableView = {
         let table = UITableView(frame: .zero, style: .grouped)
@@ -60,7 +62,7 @@ class HomeViewController: UIViewController {
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     // There are 20 sections
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 20
+        return sectionTitles.count
     }
     
     // Each section has 1 row
@@ -82,8 +84,19 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return sectionTitles[section]
+    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 200
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        guard let headerView = view as? UITableViewHeaderFooterView else { return }
+        headerView.textLabel?.textColor = .white
+        headerView.textLabel?.font = .boldSystemFont(ofSize: 16)
+        headerView.textLabel?.frame = CGRect(x: Int(headerView.bounds.origin.x) + 20, y: Int(headerView.bounds.origin.y), width: 200, height: Int(headerView.bounds.height))
     }
     
     func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
