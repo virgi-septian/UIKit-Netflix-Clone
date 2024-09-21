@@ -16,6 +16,7 @@
 		1A5C19992C9A87410053CD41 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1A5C19982C9A87410053CD41 /* Base */; };
 		1AAAE3F62C9EE12200B36414 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAAE3F52C9EE11800B36414 /* APICaller.swift */; };
 		1AAAE3F82C9F428700B36414 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAAE3F72C9F428100B36414 /* Movie.swift */; };
+		1AAAE3FA2C9F4A8900B36414 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAAE3F92C9F4A8200B36414 /* Extentions.swift */; };
 		1ACF599F2C9B63B1004E6AB3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACF599E2C9B63B1004E6AB3 /* HomeViewController.swift */; };
 		1ACF59A12C9B63EE004E6AB3 /* UpcomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACF59A02C9B63EE004E6AB3 /* UpcomingViewController.swift */; };
 		1ACF59A32C9B643F004E6AB3 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACF59A22C9B643F004E6AB3 /* SearchViewController.swift */; };
@@ -35,6 +36,7 @@
 		1A5C199A2C9A87410053CD41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AAAE3F52C9EE11800B36414 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		1AAAE3F72C9F428100B36414 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		1AAAE3F92C9F4A8200B36414 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		1ACF599E2C9B63B1004E6AB3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1ACF59A02C9B63EE004E6AB3 /* UpcomingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingViewController.swift; sourceTree = "<group>"; };
 		1ACF59A22C9B643F004E6AB3 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 		1A39F30D2C9C21FC00E5B5F2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1AAAE3F92C9F4A8200B36414 /* Extentions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				1ACF599F2C9B63B1004E6AB3 /* HomeViewController.swift in Sources */,
 				1A5C19942C9A87400053CD41 /* Netflix_Clone.xcdatamodeld in Sources */,
 				1A39F3102C9C228D00E5B5F2 /* CollectionViewTableViewCell.swift in Sources */,
+				1AAAE3FA2C9F4A8900B36414 /* Extentions.swift in Sources */,
 				1A5C198E2C9A87400053CD41 /* MainTabBarViewController.swift in Sources */,
 				1AAAE3F62C9EE12200B36414 /* APICaller.swift in Sources */,
 				1A5C198A2C9A87400053CD41 /* AppDelegate.swift in Sources */,

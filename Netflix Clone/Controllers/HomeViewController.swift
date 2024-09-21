@@ -9,7 +9,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    let sectionTitles = ["Trending", "Populer", "Trending TV", "Most Popular", "Upcoming Movie","Top Rated"]
+    let sectionTitles = ["Trending", "Trending TV", "Populer", "Most Popular", "Upcoming Movie","Top Rated"]
     
     // Table for home feed
     private let homeFeedTable: UITableView = {
@@ -97,8 +97,9 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         guard let headerView = view as? UITableViewHeaderFooterView else { return }
         headerView.textLabel?.textColor = .white
-        headerView.textLabel?.font = .boldSystemFont(ofSize: 16)
+        headerView.textLabel?.font = .boldSystemFont(ofSize: 18)
         headerView.textLabel?.frame = CGRect(x: Int(headerView.bounds.origin.x) + 20, y: Int(headerView.bounds.origin.y), width: 200, height: Int(headerView.bounds.height))
+        headerView.textLabel?.text = headerView.textLabel?.text?.capitalizedFirstLetter()
     }
     
     func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
