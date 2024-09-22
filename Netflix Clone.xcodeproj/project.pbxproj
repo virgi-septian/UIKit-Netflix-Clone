@@ -21,6 +21,7 @@
 		1ACF59A12C9B63EE004E6AB3 /* UpcomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACF59A02C9B63EE004E6AB3 /* UpcomingViewController.swift */; };
 		1ACF59A32C9B643F004E6AB3 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACF59A22C9B643F004E6AB3 /* SearchViewController.swift */; };
 		1ACF59A52C9B646B004E6AB3 /* DownloadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACF59A42C9B646B004E6AB3 /* DownloadsViewController.swift */; };
+		1ADD4D072C9FCD1A00AAF9DF /* TV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADD4D062C9FCD1600AAF9DF /* TV.swift */; };
 		1AFF2C532C9DCAB1006D6E16 /* HeroHeaderUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF2C522C9DCAB1006D6E16 /* HeroHeaderUIView.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		1ACF59A02C9B63EE004E6AB3 /* UpcomingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingViewController.swift; sourceTree = "<group>"; };
 		1ACF59A22C9B643F004E6AB3 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		1ACF59A42C9B646B004E6AB3 /* DownloadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsViewController.swift; sourceTree = "<group>"; };
+		1ADD4D062C9FCD1600AAF9DF /* TV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TV.swift; sourceTree = "<group>"; };
 		1AFF2C522C9DCAB1006D6E16 /* HeroHeaderUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroHeaderUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				1AAAE3F72C9F428100B36414 /* Movie.swift */,
+				1ADD4D062C9FCD1600AAF9DF /* TV.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 				1ACF59A12C9B63EE004E6AB3 /* UpcomingViewController.swift in Sources */,
 				1AFF2C532C9DCAB1006D6E16 /* HeroHeaderUIView.swift in Sources */,
 				1AAAE3F82C9F428700B36414 /* Movie.swift in Sources */,
+				1ADD4D072C9FCD1A00AAF9DF /* TV.swift in Sources */,
 				1ACF59A32C9B643F004E6AB3 /* SearchViewController.swift in Sources */,
 				1ACF59A52C9B646B004E6AB3 /* DownloadsViewController.swift in Sources */,
 				1ACF599F2C9B63B1004E6AB3 /* HomeViewController.swift in Sources */,
