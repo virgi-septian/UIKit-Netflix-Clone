@@ -24,7 +24,7 @@ class TitleCollectionViewCell: UICollectionViewCell {
     }
     
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        fatalError()
     }
     
     override func layoutSubviews() {
@@ -33,6 +33,7 @@ class TitleCollectionViewCell: UICollectionViewCell {
     }
     
     public func configure(with model: String){
+        print(model)
         guard let url = URL(string: model) else {return}
         posterImageView.sd_setImage(with: url, completed: nil)
     }
