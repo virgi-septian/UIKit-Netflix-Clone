@@ -70,8 +70,8 @@
 			children = (
 				1A39F30F2C9C228D00E5B5F2 /* CollectionViewTableViewCell.swift */,
 				1AFF2C522C9DCAB1006D6E16 /* HeroHeaderUIView.swift */,
-				1A7E330B2CA12237008C0499 /* TitleTableViewCell.swift */,
 				1ADD4D082CA0284700AAF9DF /* TitleCollectionViewCell.swift */,
+				1A7E330B2CA12237008C0499 /* TitleTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
