@@ -111,4 +111,22 @@ class APICaller {
         
         task.resume()
     }
+    
+    func getDiscoverMovies(completion: @escaping (Result<[Title], APIEror>)-> Void) {
+        guard let url = URL(string: "\(Constant.baseUrl)/3/discover/movie?api_key=\(Constant.API_KEY)&include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc") else { return }
+        let task = URLSession.shared.dataTask(with: url) { data, _, error in
+            guard let data = data, error == nil else {
+                return
+            }
+            
+            do {
+                let result = try JSONDecoder().decode(TrendingTitleResponse.self ,from: data)
+                completion(.success(result.results))
+            } catch {
+                completion(.failure(.failedToGetData))
+            }
+        }
+        
+        task.resume()
+    }
 }
