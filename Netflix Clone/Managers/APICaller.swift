@@ -156,7 +156,7 @@ class APICaller {
         task.resume()
     }
     
-    func getMovie(with query: String){
+    func getMovie(with query: String, completion: @escaping (Result<VieoElement, APIEror>)-> Void) {
         guard let query = query.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else { return }
         guard let url = URL(string: "\(Constant.YoutubeBaseUrl)search?q=\(query)&key=\(Constant.YoutubeAPI_Key)") else {
             return
@@ -168,10 +168,10 @@ class APICaller {
             }
             
             do {
-                let result = try JSONSerialization.jsonObject(with: data, options: .fragmentsAllowed)
-                print(result)
+                let result = try JSONDecoder().decode(YoutubeSearchResponse.self, from: data)
+                completion(.success(result.items[0]))
             } catch {
-                print(error)
+                completion(.failure(.failedToGetData))
             }
         }
         

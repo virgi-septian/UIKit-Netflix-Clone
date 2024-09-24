@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1A39F3102C9C228D00E5B5F2 /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A39F30F2C9C228D00E5B5F2 /* CollectionViewTableViewCell.swift */; };
+		1A47707B2CA26AE500C8D94A /* YoutubeSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A47707A2CA26AE500C8D94A /* YoutubeSearchResponse.swift */; };
 		1A5C198A2C9A87400053CD41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5C19892C9A87400053CD41 /* AppDelegate.swift */; };
 		1A5C198C2C9A87400053CD41 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5C198B2C9A87400053CD41 /* SceneDelegate.swift */; };
 		1A5C198E2C9A87400053CD41 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5C198D2C9A87400053CD41 /* MainTabBarViewController.swift */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		1A39F30F2C9C228D00E5B5F2 /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
+		1A47707A2CA26AE500C8D94A /* YoutubeSearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeSearchResponse.swift; sourceTree = "<group>"; };
 		1A5C19862C9A87400053CD41 /* Netflix Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Netflix Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A5C19892C9A87400053CD41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A5C198B2C9A87400053CD41 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				1AAAE3F72C9F428100B36414 /* Title.swift */,
+				1A47707A2CA26AE500C8D94A /* YoutubeSearchResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 				1ACF59A32C9B643F004E6AB3 /* SearchViewController.swift in Sources */,
 				1ACF59A52C9B646B004E6AB3 /* DownloadsViewController.swift in Sources */,
 				1ACF599F2C9B63B1004E6AB3 /* HomeViewController.swift in Sources */,
+				1A47707B2CA26AE500C8D94A /* YoutubeSearchResponse.swift in Sources */,
 				1A5C19942C9A87400053CD41 /* Netflix_Clone.xcdatamodeld in Sources */,
 				1ADD4D092CA0284700AAF9DF /* TitleCollectionViewCell.swift in Sources */,
 				1A39F3102C9C228D00E5B5F2 /* CollectionViewTableViewCell.swift in Sources */,

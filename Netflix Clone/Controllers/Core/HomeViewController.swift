@@ -36,10 +36,16 @@ class HomeViewController: UIViewController {
         
         configureNavbar()
         
-        APICaller.shared.getMovie(with: "Harry Potter")
-        
         let headerView = HeroHeaderUIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 450))
         homeFeedTable.tableHeaderView = headerView
+        APICaller.shared.getMovie(with: "Harry Potter") { result in
+            switch result {
+            case .success(let movie):
+                print(movie)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
     }
     
     private func configureNavbar() {
