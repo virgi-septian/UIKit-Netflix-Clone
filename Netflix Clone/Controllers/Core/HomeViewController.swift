@@ -85,9 +85,12 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         //cell.backgroundColor = .red
         //return cell
         
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: CollectionViewTableViewCell.idetifier, for: indexPath) as? CollectionViewTableViewCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: CollectionViewTableViewCell.idetifier, for: indexPath) as?
+            CollectionViewTableViewCell else {
             return UITableViewCell()
         }
+      
+        cell.delegate = self
         
         switch indexPath.section {
         case Section.TrendingMovies.rawValue:
@@ -161,6 +164,15 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
         return 140
     }
-    
-
 }
+
+extension HomeViewController: CollectionViewTableViewCellDelegate {
+    func collectionViewTableViewCellDidTapCell(_ cell: CollectionViewTableViewCell, viewModel: TitlePreviewViewModel) {
+        DispatchQueue.main.async { [weak self] in
+            let vc = TitlePreviewViewController()
+            vc.configure(with: viewModel)
+            self?.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+}
+

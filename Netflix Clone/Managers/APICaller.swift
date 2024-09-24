@@ -156,7 +156,7 @@ class APICaller {
         task.resume()
     }
     
-    func getMovie(with query: String, completion: @escaping (Result<VieoElement, APIEror>)-> Void) {
+    func getMovie(with query: String, completion: @escaping (Result<VideoElement, APIEror>)-> Void) {
         guard let query = query.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else { return }
         guard let url = URL(string: "\(Constant.YoutubeBaseUrl)search?q=\(query)&key=\(Constant.YoutubeAPI_Key)") else {
             return
